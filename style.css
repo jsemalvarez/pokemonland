@@ -1,4 +1,11 @@
 
+:root{
+    --background-mountains: linear-gradient( 145deg, #cf8266 , #924a30) ;
+    --grass-color:#67A167 ;
+    --shadow-grass-color: #a6543d;
+    --shadow-primary: 12px 10px 8px -5px #4d2b2bd5;
+}
+
 body{
     margin: 0;
     height: 100vh;
@@ -18,4 +25,93 @@ body{
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
     counter-reset: game;
     overflow: hidden;
+}
+
+
+/*//////////////////////////////////////////////////////////////
+//////////////////////   MOUNTAINS   ///////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.mountain{
+    position: absolute;
+    bottom: 0;
+    border-radius: 30px 30px 0 0;
+    box-shadow: var(--shadow-primary);
+    background-image: var(--background-mountains);
+    overflow: hidden;   
+}
+
+.mountain--height{
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+}
+
+.mountain--medium{
+    z-index: 5;
+    left: 10px;
+    width: 180px;
+    height: 300px;
+}
+
+.mountain--short{
+    z-index: 7;
+    right: 10px;
+    width: 140px;
+    height: 200px;
+}
+
+
+.grass{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+.body-grass{
+    z-index: 2;
+    top: 0;
+    background: linear-gradient(135deg, var(--grass-color) 25%, transparent 25%) -50px 0,
+    linear-gradient(-135deg, var(--grass-color)  25%, transparent 25%) -50px 0;
+    background-size: 20px 200px;
+
+}
+.shadow-grass {
+    z-index: 1;
+    top: 10px;
+    background: linear-gradient(135deg, var(--shadow-grass-color) 25%, transparent 25%) -50px 0,
+    linear-gradient(-135deg, var(--shadow-grass-color)  25%, transparent 25%) -50px 0;
+    background-size: 20px 220px;
+}
+
+.plant{
+    position: absolute;
+    bottom: -10px;
+    z-index: 9;
+    width: 55%;
+    height: 65px;
+    background: var(--grass-color);
+    border-radius: 40px;
+}
+
+.plant::before{
+    position: absolute;
+    top: -35px;
+    right: 25%;
+    content: "";
+    width: 50%;
+    height: 90%;
+    background: var(--grass-color);
+    border-radius: 100px 100px 10px 20px;
+}
+
+.plant--left{
+    left: -30px;
+}
+
+.plant--right{
+    right: -30px;
 }
