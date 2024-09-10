@@ -115,3 +115,117 @@ body{
 .plant--right{
     right: -30px;
 }
+
+/*//////////////////////////////////////////////////////////////
+///////////////////////   POKEMONS   ///////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.pokemon{
+    position: absolute;
+    z-index: 1;
+    height: 410px;
+    width: 80px;
+    bottom: 0;
+}
+
+/*//////////////////////////////////////////////////////////////
+/////////////////    POKEMONS   EYES   /////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.eye{
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+}
+
+.eye--left{
+    left: 15px;
+}
+
+.eye--right{
+    right: 15px;
+}
+
+.iris{
+    background: #09797c;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+.iris--left{
+    left: 1px;
+}
+
+.iris--right{
+    right: 1px;
+}
+
+.pupil{
+    background: black;
+    border-radius: 50%;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+}
+
+.pupil--left{
+    right: 3px;
+}
+
+.pupil--right{
+    right: 3px;
+}
+
+.eye-reflection{
+    background: white;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 3px;
+}
+
+.eye-reflection--left{
+    left: 4px;
+}
+
+.eye-reflection--right{
+    right: 4px;
+}
+
+/*//////////////////////////////////////////////////////////////
+//////////////////////   CHARMANDER   //////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+
+.charmander{
+    z-index: 1;
+    height: 410px;
+    left: 55px;
+    animation: fade-out-charmander 3s ease-in-out normal infinite;
+}
+
+
+@keyframes fade-out-charmander{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-40px);}
+    50% {transform: translateY(20px);}
+    75% {transform: translateY(-25px);} 
+    100% {transform: translateY(50px);}
+}
+
+.charmander__head{
+    background: #f47d38;
+    border-radius: 50%;
+    height: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
