@@ -314,3 +314,100 @@ body{
 .bulbasaur .pupil{
     background: #db4246;
 }
+
+/*//////////////////////////////////////////////////////////////
+///////////////////////   PIKACHU  /////////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.pikachu{
+    z-index: 4;
+    height: 300px;
+    left: 32px;
+    animation: fade-out-pikachu 3s ease-out 2s reverse infinite;
+}
+
+@keyframes fade-out-pikachu{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-70px);}
+    50% {transform: translateY(30px);}
+    75% {transform: translateY(-50px);} 
+    100% {transform: translateY(40px);}
+}
+
+.pikachu__ear{
+    position: absolute;
+    background-color: #ffd92a;
+    width: 14px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.pikachu__ear--left{
+    border-radius: 50%;
+    left: 12px;
+    transform: rotate(-8deg);
+}
+
+.pikachu__ear--right{
+    border-radius: 90%;
+    right: 4px;
+    transform: rotate(20deg);
+}
+
+.pikachu__inner-ear{
+    position: absolute;
+    top: -12px;
+    width: 12px;
+    height: 40px;
+    background-color: black;
+}
+
+.pikachu__inner-ear--left{
+    left: -4px;
+    transform: rotate(25deg);
+}
+
+.pikachu__inner-ear--right{
+    right: -4px;
+    transform: rotate(-25deg);
+}
+
+
+.pikachu__head{
+    background: #ffd92a;
+    border-radius: 40%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    width: 85%;
+}
+
+.pikachu__eye{
+    background: #0a081a;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 20px;
+}
+
+.pikachu__eye--left{
+    left: 12px;
+}
+
+.pikachu__eye--right{
+    right: 12px;
+}
+
+.pikachu__reflection{
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    border-radius: 50%;
+}
