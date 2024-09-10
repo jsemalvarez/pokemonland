@@ -15,6 +15,15 @@ body{
     display: grid;
     place-items: center;
     background-color: #2c3e50;
+    counter-reset: game;
+}
+
+input[type=checkbox] {
+    appearance: none;
+}
+
+input:checked{
+    counter-increment: game;
 }
 
 .phone{
@@ -25,7 +34,6 @@ body{
     width: 300px;
     background: #CCEFFF;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
-    counter-reset: game;
     overflow: hidden;
 }
 
