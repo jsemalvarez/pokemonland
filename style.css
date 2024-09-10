@@ -448,3 +448,78 @@ body{
 .squirtle .iris{
     background: #af4c24;
 }
+
+/*//////////////////////////////////////////////////////////////
+/////////////////////////   CLOUDS  ////////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.sun{
+    position: absolute;
+    top: -10px; 
+    left: -10px; 
+    width: 100px; 
+    height: 100px;
+    background-color: yellow; 
+    border-radius: 50%; 
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.8); 
+}
+
+.sun::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px; 
+    height: 150px;
+    background: radial-gradient(circle, transparent 60%, rgba(255, 223, 0, 0.5) 100%);
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.cloud{
+    position: absolute;
+    right: 150px;
+    width: 130px; 
+    height: 60px;
+	background: #fff;
+	border-radius: 80px;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+    width: 80px; 
+    height: 80px;
+	background: #fff;
+	border-radius: 100px;
+}
+
+.cloud:before {
+    top: -28px; 
+    right: 16px;
+}
+
+.cloud:after {
+	bottom: -20x; 
+    left: 16px;
+}
+
+.cloud--slow {
+	top: 150px;
+	animation: cloud-translate-x  60s linear infinite;
+}
+
+.cloud--fast {
+    top: 90px;
+    animation: cloud-translate-x  30s linear infinite;
+}
+
+.cloud--very-fast {
+	top: 16px;
+	animation: cloud-translate-x  15s linear infinite;
+}
+
+@keyframes cloud-translate-x {
+	0% {transform: translateX(400px);}
+	100% { transform: translateX(-150px);}
+}
