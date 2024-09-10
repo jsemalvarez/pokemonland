@@ -411,3 +411,40 @@ body{
     left: 2px;
     border-radius: 50%;
 }
+
+/*//////////////////////////////////////////////////////////////
+///////////////////////   SQUIRTLE  ////////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+.squirtle{
+    z-index: 6;
+    height: 200px;
+    width: 90px;
+    right: 25px;
+    animation: fade-out-squirtle 3s ease-in 1s alternate infinite;
+}
+
+
+@keyframes fade-out-squirtle{
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-55px);}
+    50% {transform: translateY(40px);}
+    75% {transform: translateY(-45px);} 
+    100% {transform: translateY(50px);}
+}
+
+.squirtle__head{
+    background: #5cc5de;
+    border-radius: 44%;
+    height: 85px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+}
+
+
+.squirtle .iris{
+    background: #af4c24;
+}
