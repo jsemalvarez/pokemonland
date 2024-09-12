@@ -256,6 +256,7 @@ input:checked{
     margin: 0 auto;
     position: absolute;
     width: 100%;
+    cursor: pointer;
 }
 
 /*//////////////////////////////////////////////////////////////
@@ -287,6 +288,7 @@ input:checked{
     margin: 0 auto;
     position: absolute;
     width: 100%;
+    cursor: pointer;
 }
 
 .bulbasaur__head::after,
@@ -411,6 +413,7 @@ input:checked{
     position: absolute;
     top: 40px;
     width: 85%;
+    cursor: pointer;
 }
 
 .pikachu__eye{
@@ -470,6 +473,7 @@ input:checked{
     margin: 0 auto;
     position: absolute;
     width: 100%;
+    cursor: pointer;
 }
 
 
